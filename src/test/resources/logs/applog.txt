@@ -1,0 +1,29 @@
+INFO    2023-10-28 15:59:25,169 [main] testPages.TestPage  - setting up the browser for the test
+INFO    2023-10-28 15:59:28,037 [main] testPages.TestPage  - assert has been executed and failed
+INFO    2023-10-28 15:59:28,037 [main] testPages.TestPage  - nopcommerce application launch was successful!
+INFO    2023-10-28 15:59:28,073 [main] testPages.TestPage  - HooverCellPhoneLink test started
+INFO    2023-10-28 15:59:37,413 [main] testPages.TestPage  - nopCommerce demo store. Cell phones
+INFO    2023-10-28 15:59:37,421 [main] testPages.TestPage  - https://demo.nopcommerce.com/cell-phones
+INFO    2023-10-28 15:59:37,428 [main] testPages.TestPage  - nopCommerce Cellphone page is launched successfully!
+INFO    2023-10-28 15:59:37,440 [main] testPages.TestPage  - CellphoneSelect test started
+INFO    2023-10-28 15:59:41,173 [main] testPages.TestPage  - Nokia cell page is loaded
+INFO    2023-10-28 15:59:41,176 [main] testPages.TestPage  - AddToCart test started
+INFO    2023-10-28 15:59:53,551 [main] testPages.TestPage  - shopping cart page is loaded
+INFO    2023-10-28 15:59:53,553 [main] testPages.TestPage  - ShopCart test started
+INFO    2023-10-28 15:59:53,584 [main] testPages.TestPage  - Shopping Cart Total: $349.00
+INFO    2023-10-28 16:00:00,025 [main] testPages.TestPage  - checkout as guest page page is loaded
+INFO    2023-10-28 16:00:00,028 [main] testPages.TestPage  - CheckOutAsGuest test started
+INFO    2023-10-28 16:00:00,561 [main] testPages.TestPage  - billing information page is loaded
+INFO    2023-10-28 16:00:00,564 [main] testPages.TestPage  - BillingInfo test started
+INFO    2023-10-28 16:00:01,411 [main] testPages.TestPage  - shipping method page is loaded
+INFO    2023-10-28 16:00:01,415 [main] testPages.TestPage  - ShipmentMethod test started
+INFO    2023-10-28 16:00:01,784 [main] testPages.TestPage  - payment method page is loaded
+INFO    2023-10-28 16:00:01,788 [main] testPages.TestPage  - PaymentMethod test started
+INFO    2023-10-28 16:00:14,899 [main] testPages.TestPage  - payment info page is loaded
+INFO    2023-10-28 16:00:14,901 [main] testPages.TestPage  - PaymentInfo test started
+INFO    2023-10-28 16:00:21,956 [main] testPages.TestPage  - order confirmation page is loaded
+INFO    2023-10-28 16:00:21,958 [main] testPages.TestPage  - OrderConfirmation test started
+INFO    2023-10-28 16:00:25,010 [main] testPages.TestPage  - completed order page is loaded
+INFO    2023-10-28 16:00:25,012 [main] testPages.TestPage  - CompletedOrder test started
+INFO    2023-10-28 16:00:30,272 [main] testPages.TestPage  - home page is loaded
+INFO    2023-10-28 16:00:35,479 [main] testPages.TestPage  - Browser closed
