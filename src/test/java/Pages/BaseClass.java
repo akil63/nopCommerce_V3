@@ -29,8 +29,7 @@ public class BaseClass {
 		String 	chrpath = System.getProperty ("user.dir") + "\\Browsers\\chromedriver.exe";
 		String 	ffpath = System.getProperty ("user.dir") + "\\Browsers\\geckodriver.exe";
 		
-		
-	
+			
 		switch(browser) {
 		  case "firefox":
 		    // disable all notification in firefox browser
@@ -92,7 +91,6 @@ public class BaseClass {
 			return (methodName+formattedDate+".png");
 		}   
 
-		
 		public void tearDown() {
 	    	if(getDriver()!=null) 
 	    		getDriver().quit();
