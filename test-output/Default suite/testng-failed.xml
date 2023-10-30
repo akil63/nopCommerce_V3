@@ -5,14 +5,15 @@
     <classes>
       <class name="testPages.TestPage">
         <methods>
+          <include name="HooverCellPhoneLink"/>
           <include name="CheckOutAsGuest"/>
+          <include name="PaymentMethod"/>
           <include name="BillingInfo"/>
           <include name="ShopCart"/>
-          <include name="PaymentMethod"/>
-          <include name="CellphoneSelect"/>
           <include name="CompletedOrder"/>
           <include name="OrderConfirmation"/>
           <include name="ShipmentMethod"/>
+          <include name="CellphoneSelect"/>
           <include name="baseSetup"/>
           <include name="AddToCart"/>
           <include name="PaymentInfo"/>

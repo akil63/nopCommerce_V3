@@ -2,60 +2,60 @@
 <testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-28T15:59:25 EDT" name="Suite" finished-at="2023-10-28T16:00:35 EDT" duration-ms="70359">
+  <suite started-at="2023-10-30T14:27:22 EDT" name="Suite" finished-at="2023-10-30T14:28:35 EDT" duration-ms="73337">
     <groups>
     </groups>
-    <test started-at="2023-10-28T15:59:25 EDT" name="Test" finished-at="2023-10-28T16:00:35 EDT" duration-ms="70359">
+    <test started-at="2023-10-30T14:27:22 EDT" name="Test" finished-at="2023-10-30T14:28:35 EDT" duration-ms="73337">
       <class name="testPages.TestPage">
-        <test-method is-config="true" signature="baseSetup()[pri:0, instance:testPages.TestPage@4d0402b]" started-at="2023-10-28T15:59:25 EDT" name="baseSetup" finished-at="2023-10-28T15:59:28 EDT" duration-ms="2906" status="PASS">
+        <test-method is-config="true" signature="baseSetup()[pri:0, instance:testPages.TestPage@4ced35ed]" started-at="2023-10-30T14:27:22 EDT" name="baseSetup" finished-at="2023-10-30T14:27:26 EDT" duration-ms="4398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseSetup -->
-        <test-method signature="HooverCellPhoneLink()[pri:1, instance:testPages.TestPage@4d0402b]" started-at="2023-10-28T15:59:28 EDT" name="HooverCellPhoneLink" finished-at="2023-10-28T15:59:37 EDT" duration-ms="9366" status="PASS">
+        <test-method signature="HooverCellPhoneLink()[pri:1, instance:testPages.TestPage@4ced35ed]" started-at="2023-10-30T14:27:26 EDT" name="HooverCellPhoneLink" finished-at="2023-10-30T14:27:36 EDT" duration-ms="9321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HooverCellPhoneLink -->
-        <test-method signature="CellphoneSelect()[pri:2, instance:testPages.TestPage@4d0402b]" started-at="2023-10-28T15:59:37 EDT" name="CellphoneSelect" finished-at="2023-10-28T15:59:41 EDT" duration-ms="3734" status="PASS">
+        <test-method signature="CellphoneSelect()[pri:2, instance:testPages.TestPage@4ced35ed]" started-at="2023-10-30T14:27:36 EDT" name="CellphoneSelect" finished-at="2023-10-30T14:27:40 EDT" duration-ms="4149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CellphoneSelect -->
-        <test-method signature="AddToCart()[pri:3, instance:testPages.TestPage@4d0402b]" started-at="2023-10-28T15:59:41 EDT" name="AddToCart" finished-at="2023-10-28T15:59:53 EDT" duration-ms="12376" status="PASS">
+        <test-method signature="AddToCart()[pri:3, instance:testPages.TestPage@4ced35ed]" started-at="2023-10-30T14:27:40 EDT" name="AddToCart" finished-at="2023-10-30T14:27:53 EDT" duration-ms="12716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddToCart -->
-        <test-method signature="ShopCart()[pri:4, instance:testPages.TestPage@4d0402b]" started-at="2023-10-28T15:59:53 EDT" name="ShopCart" finished-at="2023-10-28T16:00:00 EDT" duration-ms="6472" status="PASS">
+        <test-method signature="ShopCart()[pri:4, instance:testPages.TestPage@4ced35ed]" started-at="2023-10-30T14:27:53 EDT" name="ShopCart" finished-at="2023-10-30T14:27:59 EDT" duration-ms="6539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShopCart -->
-        <test-method signature="CheckOutAsGuest()[pri:5, instance:testPages.TestPage@4d0402b]" started-at="2023-10-28T16:00:00 EDT" name="CheckOutAsGuest" finished-at="2023-10-28T16:00:00 EDT" duration-ms="534" status="PASS">
+        <test-method signature="CheckOutAsGuest()[pri:5, instance:testPages.TestPage@4ced35ed]" started-at="2023-10-30T14:27:59 EDT" name="CheckOutAsGuest" finished-at="2023-10-30T14:28:00 EDT" duration-ms="1314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckOutAsGuest -->
-        <test-method signature="BillingInfo()[pri:6, instance:testPages.TestPage@4d0402b]" started-at="2023-10-28T16:00:00 EDT" name="BillingInfo" finished-at="2023-10-28T16:00:01 EDT" duration-ms="848" status="PASS">
+        <test-method signature="BillingInfo()[pri:6, instance:testPages.TestPage@4ced35ed]" started-at="2023-10-30T14:28:00 EDT" name="BillingInfo" finished-at="2023-10-30T14:28:01 EDT" duration-ms="856" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BillingInfo -->
-        <test-method signature="ShipmentMethod()[pri:7, instance:testPages.TestPage@4d0402b]" started-at="2023-10-28T16:00:01 EDT" name="ShipmentMethod" finished-at="2023-10-28T16:00:01 EDT" duration-ms="370" status="PASS">
+        <test-method signature="ShipmentMethod()[pri:7, instance:testPages.TestPage@4ced35ed]" started-at="2023-10-30T14:28:01 EDT" name="ShipmentMethod" finished-at="2023-10-30T14:28:02 EDT" duration-ms="329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShipmentMethod -->
-        <test-method signature="PaymentMethod()[pri:8, instance:testPages.TestPage@4d0402b]" started-at="2023-10-28T16:00:01 EDT" name="PaymentMethod" finished-at="2023-10-28T16:00:14 EDT" duration-ms="13113" status="PASS">
+        <test-method signature="PaymentMethod()[pri:8, instance:testPages.TestPage@4ced35ed]" started-at="2023-10-30T14:28:02 EDT" name="PaymentMethod" finished-at="2023-10-30T14:28:15 EDT" duration-ms="13104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PaymentMethod -->
-        <test-method signature="PaymentInfo()[pri:9, instance:testPages.TestPage@4d0402b]" started-at="2023-10-28T16:00:14 EDT" name="PaymentInfo" finished-at="2023-10-28T16:00:21 EDT" duration-ms="7056" status="PASS">
+        <test-method signature="PaymentInfo()[pri:9, instance:testPages.TestPage@4ced35ed]" started-at="2023-10-30T14:28:15 EDT" name="PaymentInfo" finished-at="2023-10-30T14:28:22 EDT" duration-ms="7042" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PaymentInfo -->
-        <test-method signature="OrderConfirmation()[pri:10, instance:testPages.TestPage@4d0402b]" started-at="2023-10-28T16:00:21 EDT" name="OrderConfirmation" finished-at="2023-10-28T16:00:25 EDT" duration-ms="3053" status="PASS">
+        <test-method signature="OrderConfirmation()[pri:10, instance:testPages.TestPage@4ced35ed]" started-at="2023-10-30T14:28:22 EDT" name="OrderConfirmation" finished-at="2023-10-30T14:28:25 EDT" duration-ms="3054" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OrderConfirmation -->
-        <test-method signature="CompletedOrder()[pri:11, instance:testPages.TestPage@4d0402b]" started-at="2023-10-28T16:00:25 EDT" name="CompletedOrder" finished-at="2023-10-28T16:00:30 EDT" duration-ms="5262" status="PASS">
+        <test-method signature="CompletedOrder()[pri:11, instance:testPages.TestPage@4ced35ed]" started-at="2023-10-30T14:28:25 EDT" name="CompletedOrder" finished-at="2023-10-30T14:28:30 EDT" duration-ms="5322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CompletedOrder -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testPages.TestPage@4d0402b]" started-at="2023-10-28T16:00:30 EDT" name="afterTest" finished-at="2023-10-28T16:00:35 EDT" duration-ms="5205" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testPages.TestPage@4ced35ed]" started-at="2023-10-30T14:28:30 EDT" name="afterTest" finished-at="2023-10-30T14:28:35 EDT" duration-ms="5136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

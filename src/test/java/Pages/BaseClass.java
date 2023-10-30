@@ -1,10 +1,13 @@
 package Pages;
 
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Properties;
+
 import org.apache.commons.io.FileUtils;
 
 
@@ -19,18 +22,35 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 
 public class BaseClass {		
 	    private static WebDriver driver;
+	    private static long implicitWait = 30;
+	    private static Properties props=new Properties();
 	
 		public static WebDriver getDriver() {			
 			return driver;
 		}
-			
+			  //method baseSetup with browser and url
 		public void baseSetup(String browser, String url) throws InterruptedException {
+			
+		//public void baseSetup(String browser) throws InterruptedException {	
 		
 		String 	chrpath = System.getProperty ("user.dir") + "\\Browsers\\chromedriver.exe";
 		String 	ffpath = System.getProperty ("user.dir") + "\\Browsers\\geckodriver.exe";
-		
 			
 		switch(browser) {
+		   case "chrome": 
+				// disable all notifications in an applicaiton shown in chrome browser
+				System.out.println(chrpath);
+				ChromeOptions chroptions = new ChromeOptions();
+				chroptions.addArguments("--disable-notifications");
+				//chroptions.addArguments("--remote-allow-origins=*");
+				//Add options for --headed or --headless browser launch
+		        //chromeOptions.addArguments("-headless");
+				
+				System.setProperty("webdriver.chrome.driver", chrpath);			 			
+				driver = new ChromeDriver(chroptions); 	
+				System.out.println("Before Test Thread ID-Chrome : "+Thread.currentThread().getId());
+				break;	
+				
 		  case "firefox":
 		    // disable all notification in firefox browser
 
@@ -42,20 +62,7 @@ public class BaseClass {
 		    driver = new FirefoxDriver(ffoptions);
 		    System.out.println("Before Test Thread ID-Firefox : "+Thread.currentThread().getId());
 		    break; 
-		  		    
-		  case "chrome": 
-			// disable all notifications in an applicaiton shown in chrome browser
-			System.out.println(chrpath);
-			ChromeOptions chroptions = new ChromeOptions();
-			chroptions.addArguments("--disable-notifications");
-			//chroptions.addArguments("--remote-allow-origins=*");
-			//Add options for --headed or --headless browser launch
-	        //chromeOptions.addArguments("-headless");
-			
-			System.setProperty("webdriver.chrome.driver", chrpath);			 			
-			driver = new ChromeDriver(chroptions); 	
-			System.out.println("Before Test Thread ID-Chrome : "+Thread.currentThread().getId());
-			break;	 	    	  
+		  		    		 
 		}	
 			getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			getDriver().get(url);  
@@ -85,12 +92,19 @@ public class BaseClass {
 			try {
 				FileUtils.copyFile(SrcFile, DestFile);
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			return (methodName+formattedDate+".png");
 		}   
-
+						
+		public static Properties propFileReader() throws IOException {
+	        //String propfile = System.getProperty("user.dir") + "/src/test/resources/logs/nopcommerce1.properties";
+	    	String propfile = "./src/test/resources/logs/nopcommerce1.properties";
+	        FileReader reader = new FileReader(propfile);
+	        props.load(reader);	       
+	        return props;
+	    }   
+										   
 		public void tearDown() {
 	    	if(getDriver()!=null) 
 	    		getDriver().quit();
