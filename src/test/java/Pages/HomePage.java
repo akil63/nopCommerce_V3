@@ -28,7 +28,7 @@ public class HomePage {
 		      .click().pause(3000)
 		      .perform();
 		return new CellPage(driver);
-		
+		    
 	}
 	
 	

@@ -29,9 +29,9 @@ public class BaseClass {
 			return driver;
 		}
 			  //method baseSetup with browser and url
-		public void baseSetup(String browser, String url) throws InterruptedException {
+		//public void baseSetup(String browser, String url) throws InterruptedException {  //two parameters
 			
-		//public void baseSetup(String browser) throws InterruptedException {	
+		public void baseSetup(String browser) throws InterruptedException {	  //one parameter
 		
 		String 	chrpath = System.getProperty ("user.dir") + "\\Browsers\\chromedriver.exe";
 		String 	ffpath = System.getProperty ("user.dir") + "\\Browsers\\geckodriver.exe";
@@ -65,9 +65,9 @@ public class BaseClass {
 		  		    		 
 		}	
 			getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			getDriver().get(url);  
+			//getDriver().get(url);  
 			getDriver().manage().window().maximize();
-			//Thread.sleep(3000);					
+			Thread.sleep(3000);					
 		}
 		
 		public static String takeSnapShot(String methodName) {
@@ -98,12 +98,12 @@ public class BaseClass {
 		}   
 						
 		public static Properties propFileReader() throws IOException {
-	        //String propfile = System.getProperty("user.dir") + "/src/test/resources/logs/nopcommerce1.properties";
-	    	String propfile = "./src/test/resources/logs/nopcommerce1.properties";
+	        String propfile = System.getProperty("user.dir") + "/src/test/resources/logs/nopcommerce1.properties";
+	    	//String propfile = "./src/test/resources/logs/nopcommerce1.properties";
 	        FileReader reader = new FileReader(propfile);
 	        props.load(reader);	       
 	        return props;
-	    }   
+	    }  
 										   
 		public void tearDown() {
 	    	if(getDriver()!=null) 

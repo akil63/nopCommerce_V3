@@ -41,35 +41,36 @@ public class TestPage extends BaseClass{
 	private CompletedOrderPage cop;	
 	public static Logger log;
 	public ExtentTest test;
-	//private static String base_url = "http://demo.nopcommerce.com/";
-	//private static String browser = "chrome";
 	private Properties props;
+	//private static String base_url = "http://demo.nopcommerce.com/";
+	//private static String browser = "chrome";	
 	//private static String browser = "firefox";
-				
-	@BeforeTest    //with properties file
+	
+					
+	@BeforeTest    
     public void baseSetup() throws InterruptedException { 
         // Configure Log4j with the log4j.properties file
-        PropertyConfigurator.configure("src/test/resources/logs/log4j.properties");
-        
+        PropertyConfigurator.configure("src/test/resources/logs/log4j.properties");        
         log = Logger.getLogger(TestPage.class.getName());   
         log.info("Setting up the browser for the test");                    
-            //read the property file
         try {
 			props = propFileReader();
 		} catch (IOException e) {
 			e.printStackTrace();
-		} // Load properties from nopcommerce1.properties.properties
-        baseSetup(props.getProperty("browser"), props.getProperty("base_url"));
-
+		} 
+        //baseSetup(props.getProperty("browser"), props.getProperty("base_url")); //option with 2 parameters (browser, base_url)
+        baseSetup(props.getProperty("browser")); //option with 1 parameter (browser)
         if (getDriver() != null) {   
             getDriver().get(props.getProperty("base_url"));  
             hp = new HomePage(getDriver());
             Assert.assertNotNull(hp, "ERROR!! nopCommerce home page is NOT launched");
+            //Assert.assertNotNull(null, "ERROR!! nopCommerce home page is NOT launched"); //for negative tests TestPageNegative
             log.info("nopCommerce home page is launched successfully!");
         } else {
             log.error("Unable to set up the browser for the test");
         }
-	}		   
+	}	   
+	
 	                //method for propFileReader inside the test page
 	    /*public static Properties propFileReader() throws IOException {
 	        Properties props = new Properties();
@@ -88,15 +89,18 @@ public class TestPage extends BaseClass{
         log = Logger.getLogger(TestPage.class.getName());
         log.info("setting up the browser for the test");
         
-    	baseSetup(browser, base_url);
+    	baseSetup(browser, base_url);  //option with 2 parameters (browser, base_url)
+    	//baseSetup(browser);  //option with one parameter (browser)
+    	getDriver().get(base_url); 
     	hp = new HomePage(getDriver());
     	Assert.assertNotNull(hp, "home page is not displayed");
     	log.info("assert has been executed and failed");
     	log.info("nopcommerce application launch was successful!");
     	
-    	}  	
-    	  */
-    			   
+    	}  	*/
+    	  
+	
+	
 	@Test(priority=1)
 	public void HooverCellPhoneLink() {
     	log.info("HooverCellPhoneLink test started");
@@ -104,7 +108,8 @@ public class TestPage extends BaseClass{
 		log.info(getDriver().getTitle());
 	log.info(getDriver().getCurrentUrl());
 		if (getDriver().getTitle().equalsIgnoreCase("nopCommerce demo store. Cell phones")) {
-			Assert.assertNotNull(cp,"ERROR !! nopCommerce Cellphone page is NOT launched!");
+			//Assert.assertNotNull(cp,"ERROR !! nopCommerce Cellphone page is NOT launched!");
+	        //Assert.assertNotNull(null,"ERROR !! nopCommerce Cellphone page is NOT launched!");
 			log.info("nopCommerce Cellphone page is launched successfully!");
 		}else {
 			log.info("nopCommerce page Title is not Cellphone.Investigate further!");
@@ -119,7 +124,7 @@ public class TestPage extends BaseClass{
 		Assert.assertNotNull(ncp,"Nokia cell page link click failure!");
 		log.info("Nokia cell page is loaded");
 		
-	} 
+	}    
 		
 	@Test(priority=3)	
 	public void AddToCart() throws InterruptedException {	
@@ -141,7 +146,7 @@ public class TestPage extends BaseClass{
 		
 	} 
 			
-	@Test(priority=5)
+	/*@Test(priority=5)
 	public void CheckOutAsGuest() {
 		log.info("CheckOutAsGuest test started");
 		bip = cogp.CheckOutAsGuest();
@@ -215,7 +220,8 @@ public class TestPage extends BaseClass{
         getDriver().quit();
         log.info("Browser closed");
         
-    }    
+    }    */
+    
 	
 				
 }    

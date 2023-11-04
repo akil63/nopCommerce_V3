@@ -1,28 +1,9 @@
-INFO    2023-10-30 14:27:22,562 [main] testPages.TestPage  - Setting up the browser for the test
-INFO    2023-10-30 14:27:26,922 [main] testPages.TestPage  - nopCommerce home page is launched successfully!
-INFO    2023-10-30 14:27:26,953 [main] testPages.TestPage  - HooverCellPhoneLink test started
-INFO    2023-10-30 14:27:36,251 [main] testPages.TestPage  - nopCommerce demo store. Cell phones
-INFO    2023-10-30 14:27:36,258 [main] testPages.TestPage  - https://demo.nopcommerce.com/cell-phones
-INFO    2023-10-30 14:27:36,263 [main] testPages.TestPage  - nopCommerce Cellphone page is launched successfully!
-INFO    2023-10-30 14:27:36,272 [main] testPages.TestPage  - CellphoneSelect test started
-INFO    2023-10-30 14:27:40,420 [main] testPages.TestPage  - Nokia cell page is loaded
-INFO    2023-10-30 14:27:40,422 [main] testPages.TestPage  - AddToCart test started
-INFO    2023-10-30 14:27:53,138 [main] testPages.TestPage  - shopping cart page is loaded
-INFO    2023-10-30 14:27:53,140 [main] testPages.TestPage  - ShopCart test started
-INFO    2023-10-30 14:27:53,166 [main] testPages.TestPage  - Shopping Cart Total: $349.00
-INFO    2023-10-30 14:27:59,679 [main] testPages.TestPage  - checkout as guest page page is loaded
-INFO    2023-10-30 14:27:59,681 [main] testPages.TestPage  - CheckOutAsGuest test started
-INFO    2023-10-30 14:28:00,994 [main] testPages.TestPage  - billing information page is loaded
-INFO    2023-10-30 14:28:00,997 [main] testPages.TestPage  - BillingInfo test started
-INFO    2023-10-30 14:28:01,852 [main] testPages.TestPage  - shipping method page is loaded
-INFO    2023-10-30 14:28:01,856 [main] testPages.TestPage  - ShipmentMethod test started
-INFO    2023-10-30 14:28:02,183 [main] testPages.TestPage  - payment method page is loaded
-INFO    2023-10-30 14:28:02,185 [main] testPages.TestPage  - PaymentMethod test started
-INFO    2023-10-30 14:28:15,289 [main] testPages.TestPage  - payment info page is loaded
-INFO    2023-10-30 14:28:15,291 [main] testPages.TestPage  - PaymentInfo test started
-INFO    2023-10-30 14:28:22,332 [main] testPages.TestPage  - order confirmation page is loaded
-INFO    2023-10-30 14:28:22,335 [main] testPages.TestPage  - OrderConfirmation test started
-INFO    2023-10-30 14:28:25,388 [main] testPages.TestPage  - completed order page is loaded
-INFO    2023-10-30 14:28:25,390 [main] testPages.TestPage  - CompletedOrder test started
-INFO    2023-10-30 14:28:30,711 [main] testPages.TestPage  - home page is loaded
-INFO    2023-10-30 14:28:35,848 [main] testPages.TestPage  - Browser closed
+INFO    2023-11-03 19:51:00,573 [main] testPages.TestPage  - Setting up the browser for the test
+INFO    2023-11-03 19:51:06,478 [main] testPages.TestPage  - nopCommerce home page is launched successfully!
+INFO    2023-11-03 19:51:06,520 [main] testPages.TestPage  - HooverCellPhoneLink test started
+INFO    2023-11-03 19:51:15,871 [main] testPages.TestPage  - nopCommerce demo store. Cell phones
+INFO    2023-11-03 19:51:15,879 [main] testPages.TestPage  - https://demo.nopcommerce.com/cell-phones
+INFO    2023-11-03 19:51:15,886 [main] testPages.TestPage  - nopCommerce Cellphone page is launched successfully!
+INFO    2023-11-03 19:51:15,901 [main] testPages.TestPage  - CellphoneSelect test started
+INFO    2023-11-03 19:51:26,155 [main] testPages.TestPage  - AddToCart test started
+INFO    2023-11-03 19:51:26,314 [main] testPages.TestPage  - ShopCart test started

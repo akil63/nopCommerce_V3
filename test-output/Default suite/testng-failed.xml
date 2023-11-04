@@ -3,22 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testPages.TestPage">
+      <class name="testPages.TestPageNegative">
         <methods>
-          <include name="HooverCellPhoneLink"/>
-          <include name="CheckOutAsGuest"/>
-          <include name="PaymentMethod"/>
-          <include name="BillingInfo"/>
-          <include name="ShopCart"/>
-          <include name="CompletedOrder"/>
-          <include name="OrderConfirmation"/>
-          <include name="ShipmentMethod"/>
           <include name="CellphoneSelect"/>
           <include name="baseSetup"/>
           <include name="AddToCart"/>
-          <include name="PaymentInfo"/>
         </methods>
-      </class> <!-- testPages.TestPage -->
+      </class> <!-- testPages.TestPageNegative -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
