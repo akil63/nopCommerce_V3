@@ -20,10 +20,13 @@ public class mySqlConnect {
 	private static String username = "root";	
     
 	//Database Password		
-	private static String password = "root";				
+	//private static String password = "root";	
+	private static String password = "Montreal2023!";
 
 	//Query to Execute		
-	private static String query = "select * from config;";
+	private static String query = "select * from nopcomdata;";
+	
+	//private static String query = "select * from inputdata;";
 	
 	public static Object[][] getMySqlData() throws SQLException, ClassNotFoundException {
 	
@@ -52,16 +55,22 @@ public class mySqlConnect {
     rs.beforeFirst();
     // While Loop to iterate through all data and print results		
 	while (rs.next()){
-        		String baseURL = rs.getString(2);								        
-                String browser = rs.getString(3);
-                String un = rs.getString(4);
-                String pwd = rs.getString(5);	
-                System. out.println(baseURL+";  "+browser+"; "+un+";  "+pwd);
-                data[i][0]= baseURL;
-                data[i][1]= browser;
-                data[i][2]= un;
-                data[i][3]= pwd;
+		
+        		String browser = rs.getString(2);								        
+                String baseURL = rs.getString(3);
+                System. out.println(browser+";  "+baseURL);
+                data[i][0]= browser;
+                data[i][1]= baseURL;
                 i = i+1;
+		
+                
+                /*String baseURL = rs.getString(2);								        
+                String browser = rs.getString(3);                                                          
+                System. out.println(baseURL+";  "+browser);                                                              
+                data[i][0]= baseURL;
+                data[i][1]= browser; 
+                 i = i+1;    */
+                
         }		
 		 // closing DB Connection		
 	con.close();	

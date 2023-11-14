@@ -1,9 +1,28 @@
-INFO    2023-11-03 19:51:00,573 [main] testPages.TestPage  - Setting up the browser for the test
-INFO    2023-11-03 19:51:06,478 [main] testPages.TestPage  - nopCommerce home page is launched successfully!
-INFO    2023-11-03 19:51:06,520 [main] testPages.TestPage  - HooverCellPhoneLink test started
-INFO    2023-11-03 19:51:15,871 [main] testPages.TestPage  - nopCommerce demo store. Cell phones
-INFO    2023-11-03 19:51:15,879 [main] testPages.TestPage  - https://demo.nopcommerce.com/cell-phones
-INFO    2023-11-03 19:51:15,886 [main] testPages.TestPage  - nopCommerce Cellphone page is launched successfully!
-INFO    2023-11-03 19:51:15,901 [main] testPages.TestPage  - CellphoneSelect test started
-INFO    2023-11-03 19:51:26,155 [main] testPages.TestPage  - AddToCart test started
-INFO    2023-11-03 19:51:26,314 [main] testPages.TestPage  - ShopCart test started
+INFO    2023-11-09 16:37:19,422 [main] testPages.TestPage  - Setting up the browser for the test
+INFO    2023-11-09 16:37:26,186 [main] testPages.TestPage  - nopCommerce home page is launched successfully!
+INFO    2023-11-09 16:37:26,213 [main] testPages.TestPage  - HooverCellPhoneLink test started
+INFO    2023-11-09 16:37:35,527 [main] testPages.TestPage  - nopCommerce demo store. Cell phones
+INFO    2023-11-09 16:37:35,534 [main] testPages.TestPage  - https://demo.nopcommerce.com/cell-phones
+INFO    2023-11-09 16:37:35,539 [main] testPages.TestPage  - nopCommerce Cellphone page is launched successfully!
+INFO    2023-11-09 16:37:35,548 [main] testPages.TestPage  - CellphoneSelect test started
+INFO    2023-11-09 16:37:39,966 [main] testPages.TestPage  - Nokia cell page is loaded
+INFO    2023-11-09 16:37:39,968 [main] testPages.TestPage  - AddToCart test started
+INFO    2023-11-09 16:37:52,699 [main] testPages.TestPage  - shopping cart page is loaded
+INFO    2023-11-09 16:37:52,702 [main] testPages.TestPage  - ShopCart test started
+INFO    2023-11-09 16:37:52,729 [main] testPages.TestPage  - Shopping Cart Total: $349.00
+INFO    2023-11-09 16:37:59,205 [main] testPages.TestPage  - checkout as guest page page is loaded
+INFO    2023-11-09 16:37:59,207 [main] testPages.TestPage  - CheckOutAsGuest test started
+INFO    2023-11-09 16:38:00,607 [main] testPages.TestPage  - billing information page is loaded
+INFO    2023-11-09 16:38:00,609 [main] testPages.TestPage  - BillingInfo test started
+INFO    2023-11-09 16:38:01,391 [main] testPages.TestPage  - shipping method page is loaded
+INFO    2023-11-09 16:38:01,393 [main] testPages.TestPage  - ShipmentMethod test started
+INFO    2023-11-09 16:38:01,719 [main] testPages.TestPage  - payment method page is loaded
+INFO    2023-11-09 16:38:01,721 [main] testPages.TestPage  - PaymentMethod test started
+INFO    2023-11-09 16:38:14,811 [main] testPages.TestPage  - payment info page is loaded
+INFO    2023-11-09 16:38:14,813 [main] testPages.TestPage  - PaymentInfo test started
+INFO    2023-11-09 16:38:21,860 [main] testPages.TestPage  - order confirmation page is loaded
+INFO    2023-11-09 16:38:21,862 [main] testPages.TestPage  - OrderConfirmation test started
+INFO    2023-11-09 16:38:24,916 [main] testPages.TestPage  - completed order page is loaded
+INFO    2023-11-09 16:38:24,917 [main] testPages.TestPage  - CompletedOrder test started
+INFO    2023-11-09 16:38:30,186 [main] testPages.TestPage  - home page is loaded
+INFO    2023-11-09 16:38:35,393 [main] testPages.TestPage  - Browser closed

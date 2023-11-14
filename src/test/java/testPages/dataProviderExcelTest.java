@@ -22,13 +22,12 @@ public class dataProviderExcelTest extends BaseClass{
 
     @Test(dataProvider = "readExcelData")
     public void openBrowserAndURL(String browser, String url) throws InterruptedException {
-        baseSetup(browser); // Initialize the browser
-        getDriver().get(url); // Open the URL       
+        baseSetup(browser); // initialize the browser
+        getDriver().get(url); // open the url      
         hp = new HomePage(getDriver());        
         Assert.assertNotNull(hp, "Home page is not displayed");
         System.out.println("assert has been executed and failed");
     	System.out.println("nopcommerce application launch was successful!");
-
         Thread.sleep(3000);	
         getDriver().quit();
     

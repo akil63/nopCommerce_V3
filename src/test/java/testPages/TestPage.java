@@ -146,7 +146,7 @@ public class TestPage extends BaseClass{
 		
 	} 
 			
-	/*@Test(priority=5)
+	@Test(priority=5)
 	public void CheckOutAsGuest() {
 		log.info("CheckOutAsGuest test started");
 		bip = cogp.CheckOutAsGuest();
@@ -220,7 +220,7 @@ public class TestPage extends BaseClass{
         getDriver().quit();
         log.info("Browser closed");
         
-    }    */
+    }    
     
 	
 				

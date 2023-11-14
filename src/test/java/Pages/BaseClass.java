@@ -16,13 +16,14 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 
 public class BaseClass {		
 	    private static WebDriver driver;
-	    private static long implicitWait = 30;
+	    private static long implicitWait = 10;
 	    private static Properties props=new Properties();
 	
 		public static WebDriver getDriver() {			
@@ -33,11 +34,27 @@ public class BaseClass {
 			
 		public void baseSetup(String browser) throws InterruptedException {	  //one parameter
 		
-		String 	chrpath = System.getProperty ("user.dir") + "\\Browsers\\chromedriver.exe";
-		String 	ffpath = System.getProperty ("user.dir") + "\\Browsers\\geckodriver.exe";
+		//String 	chrpath = System.getProperty ("user.dir") + "\\Browsers\\chromedriver.exe";
+		//String 	ffpath = System.getProperty ("user.dir") + "\\Browsers\\geckodriver.exe";
 			
 		switch(browser) {
-		   case "chrome": 
+		
+		case "chrome":
+			ChromeOptions ops = new ChromeOptions();
+			     ops.addArguments("--disable-notifications");
+			    //System.setProperty("webdriver.chrome.driver", "./lib/chromedriver");
+			  driver = new ChromeDriver(ops);
+			//driver = new ChromeDriver();
+	          break;
+			case "firefox":
+			driver = new FirefoxDriver();
+			break;
+	         case "edge":
+			driver = new EdgeDriver();
+			break;
+		
+		
+		   /*case "chrome": 
 				// disable all notifications in an applicaiton shown in chrome browser
 				System.out.println(chrpath);
 				ChromeOptions chroptions = new ChromeOptions();
@@ -63,7 +80,10 @@ public class BaseClass {
 		    System.out.println("Before Test Thread ID-Firefox : "+Thread.currentThread().getId());
 		    break; 
 		  		    		 
+		}	*/
+			
 		}	
+		
 			getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			//getDriver().get(url);  
 			getDriver().manage().window().maximize();
